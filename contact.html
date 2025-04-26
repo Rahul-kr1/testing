@@ -3,23 +3,48 @@
   <option value="es">Finnish</option>
   <option value="fr">French</option>
 </select>
- body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 100px;
-    }
-    h1 {
-      color: #2c3e50;
-    }
-    p {
-      color: #555;
-    }
-  </style>
-</head>
 <body>
-  <h1 data-i18n="label_23"></h1>
-  <p data-i18n="label_24"></p>
+  <header>
+      <h1>Contact Us</h1>
+  </header>
+  <section id="contact-info">
+      <h2>Our Contact Information</h2>
+      <p>Email: support@mywebsite.com</p>
+      <p>Phone: +1 (123) 456-7890</p>
+      <p>Address: 1234 Innovation Drive, Tech City, USA</p>
+  </section>
+
+  <section id="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="/submit-form" method="POST">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="6" required></textarea><br><br>
+
+          <button type="submit">Submit</button>
+      </form>
+  </section>
+
+  <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div>
+          <h3>How can I create an account?</h3>
+          <p>Simply click on the 'Sign Up' button on the homepage and follow the instructions.</p>
+      </div>
+      <div>
+          <h3>How do I reset my password?</h3>
+          <p>Click 'Forgot Password' on the login page and follow the prompts to reset your password.</p>
+      </div>
+  </section>
+
+  <footer>
+      <p>© 2025 My Website. All rights reserved.</p>
+  </footer>
 </body>
-<script src="translations/translation.js"></script>
 </body>
 </html>
